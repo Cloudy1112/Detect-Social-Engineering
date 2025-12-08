@@ -88,7 +88,7 @@ with st.sidebar:
                 
                 # Nối lại thành một chuỗi duy nhất
                 # Kỹ thuật: f-string giúp chèn biến vào chuỗi dễ dàng
-                full_text = f"Subject: {subj}\n\n{body}"
+                full_text = f"{subj}\n\n{body}"
                 
                 # Gán vào biến chung để đưa sang màn hình chính
                 st.session_state.content_to_fill = full_text
@@ -146,4 +146,4 @@ if st.button("KIỂM TRA NGAY", type="primary", use_container_width=True):
         st.error("Vui lòng dán nội dung email!")
 
 st.markdown("---")
-st.caption("Đồ án tốt nghiệp 2025 – Accuracy 97.83%")
+st.caption("Đồ án tiểu luận chuyên ngành 2025 – Accuracy 97.83%")
